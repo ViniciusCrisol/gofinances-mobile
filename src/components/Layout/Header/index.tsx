@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logo from '../../../assets/Logo.png';
+import logo from '../../../assets/logo.png';
 import formatDate from '../../../utils/formatDate';
 
 import { Container, Logo, Label } from './styles';
