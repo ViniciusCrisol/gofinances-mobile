@@ -27,10 +27,11 @@ const Routes: React.FC = () => (
         style: {
           backgroundColor: '#fff',
           borderTopWidth: 0,
-          flexDirection: 'row',
         },
         activeTintColor: '#FF872C',
         inactiveTintColor: '#363F5F',
+        labelPosition: 'beside-icon',
+        labelStyle: { fontSize: 14, marginLeft: 24 },
       }}
     >
       <Tab.Screen name="Home" component={Home} options={{ title: 'Início' }} />
