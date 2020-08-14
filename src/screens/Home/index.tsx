@@ -9,9 +9,9 @@ const Home: React.FC = () => {
     <Wrapper>
       <Header>
         <HeaderContent horizontal>
-          <HeaderCard />
-          <HeaderCard />
-          <HeaderCard />
+          <HeaderCard type="income" value={2500} />
+          <HeaderCard type="outcome" value={2500} />
+          <HeaderCard type="total" value={2500} />
         </HeaderContent>
       </Header>
       <Container />
