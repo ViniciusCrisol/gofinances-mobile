@@ -2,6 +2,8 @@ import React, { useRef, useCallback, useState } from 'react';
 import { FormHandles } from '@unform/core';
 import { Form } from '@unform/mobile';
 
+import api from '../../services/api';
+
 import Input from './Input';
 import TransactionSelector from './TransactionSelector';
 
@@ -25,7 +27,7 @@ const Transactions: React.FC = () => {
         category,
       };
 
-      console.log(formData);
+      api.post('/', formData);
     },
     [transactionType],
   );

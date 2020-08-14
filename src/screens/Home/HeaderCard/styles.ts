@@ -31,10 +31,3 @@ export const ValueText = styled.Text<Props>`
   font-size: 30px;
   color: ${({ type }) => (type === 'total' ? 'white' : '#363f5f')};
 `;
-
-export const ValueLabel = styled.Text<Props>`
-  margin-top: 6px;
-
-  font-size: 14px;
-  color: ${({ type }) => (type === 'total' ? 'white' : '#363f5f')};
-`;
