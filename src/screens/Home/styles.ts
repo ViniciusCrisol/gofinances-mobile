@@ -7,7 +7,7 @@ export const Wrapper = styled.View`
 export const Header = styled.View`
   position: relative;
 
-  height: 160px;
+  height: 184px;
   background-color: #5636d3;
 `;
 
@@ -19,7 +19,20 @@ export const HeaderContent = styled.ScrollView.attrs(() => ({
   position: absolute;
 `;
 
-export const Container = styled.View`
+export const Content = styled.View`
   flex: 1;
-  padding: 24px;
+  padding: 84px 24px 0;
+`;
+
+export const Label = styled.Text`
+  color: #363f5f;
+  font-size: 20px;
+  margin-bottom: 2px;
+`;
+
+export const ListContent = styled.ScrollView.attrs(() => ({
+  showsVerticalScrollIndicator: false,
+  contentContainerStyle: { paddingTop: 22, paddingBottom: 8 },
+}))`
+  flex: 1;
 `;

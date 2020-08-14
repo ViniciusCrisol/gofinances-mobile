@@ -1,8 +1,16 @@
 import React from 'react';
 
+import ListCard from './ListCard';
 import HeaderCard from './HeaderCard';
 
-import { Wrapper, Header, HeaderContent, Container } from './styles';
+import {
+  Wrapper,
+  Header,
+  HeaderContent,
+  Content,
+  Label,
+  ListContent,
+} from './styles';
 
 const Home: React.FC = () => {
   return (
@@ -14,7 +22,14 @@ const Home: React.FC = () => {
           <HeaderCard type="total" value={2500} />
         </HeaderContent>
       </Header>
-      <Container />
+      <Content>
+        <Label>Listagem</Label>
+        <ListContent>
+          <ListCard />
+          <ListCard />
+          <ListCard />
+        </ListContent>
+      </Content>
     </Wrapper>
   );
 };
